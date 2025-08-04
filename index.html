@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novlok Arurvedic Clinic</title>
+    <link rel="icon" type="image/png" href="img video/logo.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./HomePageCSS/fiestNavbar.css">
+    <link rel="stylesheet" href="./HomePageCSS/secondNavbar.css">
+    <link rel="stylesheet" href="./HomePageCSS/FirstSection.css">
+    <link rel="stylesheet" href="./HomePageCSS/firstCardSection.css">
+    <link rel="stylesheet" href="./HomePageCSS/footer.css">
+    <link rel="stylesheet" href="./HomePageCSS/secondimgsection.css">
+    <link rel="stylesheet" href="./HomePageCSS/form.css">
+
+</head>
+
+
+<body class="overflow-x-hidden">
+
+<!-- ✅ WhatsApp Floating Icon -->
+<a href="https://wa.me/919312371118?text=" 
+   class="fixed bottom-28 right-0 z-50"
+   target="_blank" 
+   rel="noopener noreferrer"
+   aria-label="Chat on WhatsApp"
+   >
+
+   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-16 h-16" viewBox="0 0 48 48">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#fff" d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z"></path><path fill="#fff" d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z"></path><path fill="#cfd8dc" d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z"></path><path fill="#40c351" d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z"></path><path fill="#fff" fill-rule="evenodd" d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z" clip-rule="evenodd"></path>
+            </svg>
+           
+</a>
+
+
+
+<!-- Popup -->
+
+ <div class="all-form-pop">
+<div class="popup-overlay" id="popupForm">
+  <div class="popup-box">
+    <span class="close-btn" onclick="closePopup()">X</span>
+    <h2 style="color: #ffffff; font-size: 3rem; font-weight: 700;">Contact Us</h2>
+
+    <form action="xya@gmail.com" method="post" onsubmit="return submitForm()">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="tel" placeholder="Your Mobile Number" required>
+      <textarea type="text" name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</div>
+</div>
+<script>
+  // Show popup after 5 seconds
+  setTimeout(() => {
+    document.getElementById("popupForm").style.display = "flex";
+  }, 4000);
+
+  // Close popup
+  function closePopup() {
+    document.getElementById("popupForm").style.display = "none";
+  }  
+  // https://formsubmit.co/info.sabkasabkuchh@gmail.com
+</script>
+
+
+    
+
+
+<!-- translet js -->
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,gu,mr,bn,ta,te,ur,pa',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+
+
+  <!-- +++++++++++++++++ 2  second navbar++++++++++++++++++ -->
+
+
+ <!-- Navbar -->
+<header class="w-full border-b border-gray-300 z-index-100 relative top-0 left-0 bg-gray-50 z-30">
+  <div class="z-index-100 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex z-index-100 items-center justify-between h-16">
+      <!-- Logo left side -->
+      <div class="z-index-100 mt-20 ml-40  flex-shrink-0 flex items-center">
+        <img  class="w-40 rounded-3xl"
+          src="img video/logo.jpg" 
+          alt="Minimalistic logo with stylized leaf shapes in green and orange arranged in a circle around a subtle flame, symbolizing nature and wellness" 
+          class="h-10 w-auto"
+          onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2579d241-6081-47cd-b1a3-d8bd4b6bd4c2.png';"
+        />
+      </div>
+      
+      <!-- Navigation menu right side -->
+      <div class="hidden md:flex space-x-8">
+        <a href="./index.html" class="text-gray-700 hover:text-green-600 font-semibold">HOME</a>
+        <a href="./About/about.html" class="text-gray-700 hover:text-green-600 font-semibold">ABOUT US</a>
+
+
+<li class="relative group list-none">
+        <a href="#" class="text-gray-700 hover:text-green-600 font-semibold">BEST INFERTILITY TREATMENT</a>
+        <!-- Dropdown -->
+        <ul class="bg-white absolute hidden group-hover:block text-black mt-2 py-2 rounded shadow-lg min-w-[150px]">
+          <li><a href="./Treatment/Infertility-treatment1.html" class="block px-4 py-2 hover:bg-gray-100">INFERTILITY TREATMENT</a></li>
+          <li><a href="./Treatment/Female-infertility2.html" class="block px-4 py-2 hover:bg-gray-100">FEMALE INFERTILITY</a></li>
+          <li><a href="./Treatment/Male-infertility3.html" class="block px-4 py-2 hover:bg-gray-100">MALE INFERTILITY</a></li>
+          <li><a href="./Treatment/Tubal-Blockage-Treatment4.html" class="block px-4 py-2 hover:bg-gray-100">TUBAL BLOCKAGE TREATMENT</a></li>
+          <li><a href="./Treatment/Hydrosalpinx-Treatment5.html" class="block px-4 py-2 hover:bg-gray-100">HYDROSALPINX TREATMENT</a></li>
+          <li><a href="./Treatment/PCOD-PCOS6.html" class="block px-4 py-2 hover:bg-gray-100">PCOD-PCOS</a></li>
+          <li><a href="./Treatment/Endometriosis7.html" class="block px-4 py-2 hover:bg-gray-100">ENDOMETRIOSIS</a></li>
+          <li><a href="./Treatment/Allergy-Immunotherapy-Delhi8.html" class="block px-4 py-2 hover:bg-gray-100">ALLERGY TREATMENT</a></li>
+        </ul>
+      </li>
+
+
+        <!-- <a href="./PANCHKARMA/panchkarma.html" class="text-gray-600 hover:text-green-600 font-semibold">PANCHKARMA</a> -->
+        <a href="./Blog/blog.html" class="text-gray-700 hover:text-green-600 font-semibold ">BLOG</a>
+        <a href="./FAQ/faq.html" class="text-gray-700 hover:text-green-600 font-semibold">FAQ</a>
+        <a href="./Contact us/Contact-us.html" class="text-gray-700 hover:text-green-600 font-semibold">CONTACT US</a>
+
+          <a href="tel:+9312371118" aria-label="Call WhatsApp" >
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-12 h-12" viewBox="0 0 48 48">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#fff" d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z"></path><path fill="#fff" d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z"></path><path fill="#cfd8dc" d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z"></path><path fill="#40c351" d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z"></path><path fill="#fff" fill-rule="evenodd" d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+    
+          
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <input type="checkbox" id="menu-toggle" class="hidden" />
+        <label for="menu-toggle" class="hamburger cursor-pointer flex flex-col space-y-1.5">
+          <div class="w-6 h-0.5 bg-gray-700"></div>
+          <div class="w-6 h-0.5 bg-gray-700"></div>
+          <div class="w-6 h-0.5 bg-gray-700"></div>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Mobile menu -->
+  <nav class="md:hidden">
+    <ul class="hidden flex-col space-y-2 font-semibold text-gray-700">
+      <li><a href="index.html" class="block p-2 hover:bg-green-100 rounded">HOME</a></li>
+      <li><a href="./About/about.html" class="block p-2 hover:bg-green-100 rounded">ABOUT US</a></li>
+
+      <li class="relative group list-none">
+        <a href="#" class="text-gray-900 hover:text-green-600 font-semibold text-lg">BEST INFERTILITY TREATMENT</a>
+        <!-- Dropdown -->
+        <ul class="absolute hidden group-hover:block bg-white text-black mt-2 py-2 rounded shadow-lg min-w-[150px]">
+          <li><a href="./Treatment/Infertility-treatment1.html" class="block px-4 py-2 hover:bg-gray-100">INFERTILITY TREATMENT</a></li>
+          <li><a href="./Treatment/Female-infertility2.html" class="block px-4 py-2 hover:bg-gray-100">FEMALE INFERTILITY</a></li>
+          <li><a href="./Treatment/Male-infertility3.html" class="block px-4 py-2 hover:bg-gray-100">MALE INFERTILITY</a></li>
+          <li><a href="./Treatment/Tubal-Blockage-Treatment4.html" class="block px-4 py-2 hover:bg-gray-100">TUBAL BLOCKAGE TREATMENT</a></li>
+          <li><a href="./Treatment/Hydrosalpinx-Treatment5.html" class="block px-4 py-2 hover:bg-gray-100">HYDROSALPINX TREATMENT</a></li>
+          <li><a href="./Treatment/PCOD-PCOS6.html" class="block px-4 py-2 hover:bg-gray-100">PCOD-PCOS</a></li>
+          <li><a href="./Treatment/Endometriosis7.html" class="block px-4 py-2 hover:bg-gray-100">ENDOMETRIOSIS</a></li>
+          <li><a href="./Treatment/Allergy-Immunotherapy-Delhi8.html" class="block px-4 py-2 hover:bg-gray-100">ALLERGY TREATMENT</a></li>
+        </ul>
+      </li>
+
+      <li><a href="./Blog/blog.html" class="block p-2 hover:bg-green-100 rounded">BLOG</a></li>
+      <li><a href="./FAQ/faq.html" class="block p-2 hover:bg-green-100 rounded">FAQ</a></li>
+      <li><a href="./Contact us/Contact-us.html" class="block p-2 hover:bg-green-100 rounded">CONTACT US</a></li>
+      
+        <li>         
+          <a href="tel:+9312371118" aria-label="Call WhatsApp" class="mb-20 flex items-center justify-center rounded-full border border-green-600 p-2 hover:bg-green-600 hover:text-white transition">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-12 h-12" viewBox="0 0 48 48">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#fff" d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z"></path><path fill="#fff" d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z"></path><path fill="#cfd8dc" d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z"></path><path fill="#40c351" d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z"></path><path fill="#fff" fill-rule="evenodd" d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </li>
+    </ul>
+  </nav>
+
+<script>
+  // Toggle mobile menu display based on checkbox
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.querySelector('nav ul');
+
+  menuToggle.addEventListener('change', function() {
+    if(this.checked) {
+      mobileMenu.style.display = 'flex';
+    } else {
+      mobileMenu.style.display = 'none';
+    }
+  });
+</script>
+
+</header>
+
+
+
+
+<!-- +++++++++++++++++++++first section img and pergraph++++++++++++++++++ -->
+
+  <!-- ✅ Background Fullscreen Image -->
+<div class="first-container">
+      <img src="./img video/main.png" alt="Background Main Image" />
+</div>
+  
+
+
+
+      <!-- third img section  jo img movment kar rhi h-->
+
+    <style>
+      .third-img-section {
+       padding: 40px 20px;
+       background-color: #f8f8f8;
+}
+
+.third-img-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.third-img-section .text-box {
+  flex: 1 1 500px;
+}
+
+.third-img-section .text-box h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.third-img-section .text-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #444;
+}
+
+.third-img-section .text-box p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.third-img-section .image-box {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.third-img-section .image-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+.float-img {
+  animation: floatUpDown 1.5s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+    </style>
+
+
+
+<!-- right to left auto scorol  -->
+  <style>
+    /* Make smooth continuous right-to-left scrolling with infinite loop effect using keyframes */
+    @keyframes scrollRightToLeft {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    .scrolling-container {
+      white-space: nowrap;
+      will-change: transform;
+      animation: scrollRightToLeft 8s linear infinite;
+    }
+    /* Duplicate the inner boxes to create seamless infinite scroll effect */
+    .scrolling-container > * {
+      display: inline-block;
+      vertical-align: top;
+      white-space: normal;
+    }
+  </style>
+
+ <section class="overflow-hidden ">
+    <div class="relative w-full max-w-screen-xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-6">BEST INFERTILITY AYURVEDIC TREATMENT</h2>
+      <div class="overflow-x-hidden">
+
+        <div class="scrolling-container flex space-x-2 select-none" aria-label="Scrolling list of Ayurvedic services boxes" role="list">
+          <!-- seven boxes duplicated twice for infinite scroll effect -->
+           
+<div class="min-w-220px] max-w-[220px] h-[400px] overflow-hidden bg-yellow-100 rounded-xl p-0 flex flex-col items-center shadow-md flex-shrink-0" role="listitem">
+  <a href="./Treatment/Infertility-treatment1.html"  class="no-underline">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/32e4e2d5-4973-444e-9152-8cffae04f5d5.png" alt="Illustration of Ayurvedic mortar with leaves in blue and green colors" class="mb-4" onerror="this.style.display='none'"/>
+            <h3 class="font-semibold text-center text-gray-700 mb-2">Infertility Treatment</h3></a>
+            <p class="text-center text-gray-600 text-sm">Infertility is a multifaceted medical condition that involves both men and women. Treatment strategies are very individualized and health status.</p>
+          </div>
+        
+
+<div class="min-w-220px] max-w-[220px] h-[400px] overflow-hidden bg-yellow-100 rounded-xl p-0 flex flex-col items-center shadow-md flex-shrink-0" role="listitem">
+  <a href="./Treatment/Female-infertility2.html"  class="no-underline">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6539a892-9579-4411-88d5-5c76f36d1835.png" alt="Icon of a black open book with head silhouette representing knowledge" class="mb-4" onerror="this.style.display='none'"/>
+            <h3 class="font-semibold text-center text-gray-700 mb-2">Female Infertility</h3></a>
+            <p class="text-center text-gray-600 text-sm">EThe principal causes of female infertility are ovulation disorders, damaged fallopian tubes, and diseases such as endometriosis and PCOS.</p>
+          </div>
+
+
+<div class="min-w-220px] max-w-[220px] h-[400px] overflow-hidden bg-yellow-100 rounded-xl p-0 flex flex-col items-center shadow-md flex-shrink-0" role="listitem">
+   <a href="./Treatment/Male-infertility3.html"  class="no-underline">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0c99b34f-d46d-4e2c-8555-d65d29d7c320.png" alt="Graphic of female doctor with cap representing Ayurveda practitioner" class="mb-4" onerror="this.style.display='none'"/> 
+            <h3 class="font-semibold text-center text-gray-700 mb-2">Male Infertility</h3></a>
+            <p class="text-center text-gray-600 text-sm">Male infertility is most commonly associated with problems in sperm production, functioning, or transport..</p>
+         
+          </div>
+        </a>
+
+
+<div class="min-w-220px] max-w-[220px] h-[400px] overflow-hidden bg-yellow-100 rounded-xl p-0 flex flex-col items-center shadow-md flex-shrink-0" role="listitem">
+  <a href="./Treatment/Tubal-Blockage-Treatment4.html"  class="no-underline">
+            <img  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4e6337f0-5ad3-440b-88df-fd67cd2a653c.png" alt="Icon illustrating heartbeat and wellness monitoring" class="mb-4" onerror="this.style.display='none'"/>
+            <h3 class="font-semibold text-center text-gray-700 mb-2">Tubal Blockage Treatment</h3></a>
+            <p class="text-center text-gray-600 text-sm">Blocked fallopian tubes are a major reason for female infertility because they keep the egg and sperm from coming together.</p>
+          </div>
+<div class="min-w-220px] max-w-[220px] h-[400px] overflow-hidden bg-yellow-100 rounded-xl p-0 flex flex-col items-center shadow-md flex-shrink-0" role="listitem">
+  <a href="./Treatment/Hydrosalpinx-Treatment5.html"  class="no-underline">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0cb49853-33ff-47ae-82d1-3f0b694783a3.png" alt="Illustration of Ayurvedic mortar with leaves in blue and green colors" class="mb-4" onerror="this.style.display='none'"/>
+            <h3 class="font-semibold text-center text-gray-700 mb-2">Hydrosalpinx Treatment</h3></a>
+            <p class="text-center text-gray-600 text-sm">Hydrosalpinx is a particular form of tubal obstruction in which the fallopian tube becomes obstructed and filled with liquid, usually as a result of previous infection.</p>
+          </div>
+<div class="min-w-220px] max-w-[220px] h-[400px] overflow-hidden bg-yellow-100 rounded-xl p-0 flex flex-col items-center shadow-md flex-shrink-0" role="listitem">
+  <a href="./Treatment/PCOD-PCOS6.html"  class="no-underline">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/beefbcbb-9392-4303-89ac-8db961b01be5.png" alt="Icon of a black open book with head silhouette representing knowledge" class="mb-4" onerror="this.style.display='none'"/>
+            <h3 class="font-semibold text-center text-gray-700 mb-2">PCOD/PCOS</h3></a>
+            <p class="text-center text-gray-600 text-sm">PCOD (Polycystic Ovarian Disease) and PCOS (Polycystic Ovary Syndrome) are typical hormonal disorders that induce ovulation irregularities and fertility problems.</p>
+          </div>
+<div class="min-w-220px] max-w-[220px] h-[400px] overflow-hidden bg-yellow-100 rounded-xl p-0 flex flex-col items-center shadow-md flex-shrink-0" role="listitem">
+  <a href="./Treatment/Endometriosis7.html"  class="no-underline">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad41ba4e-f5fb-4d01-b09d-b7a62344ef40.png" alt="Graphic of female doctor with cap representing Ayurveda practitioner" class="mb-4" onerror="this.style.display='none'"/>
+            <h3 class="font-semibold text-center text-gray-700 mb-2">Endometriosis</h3></a>
+            <p class="text-center text-gray-600 text-sm">Endometriosis has been described as a painful condition in which tissue that is similar to the lining of the uterus proliferates outside of the uterus.</p>
+          </div>
+<div class="min-w-220px] max-w-[220px] h-[400px] overflow-hidden bg-yellow-100 rounded-xl p-0 flex flex-col items-center shadow-md flex-shrink-0" role="listitem">
+  <a href="./Treatment/Allergy-Immunotherapy-Delhi8.html"  class="no-underline">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0cb49853-33ff-47ae-82d1-3f0b694783a3.png" alt="Illustration of Ayurvedic mortar with leaves in blue and green colors" class="mb-4" onerror="this.style.display='none'"/>
+            <h3 class="font-semibold text-center text-gray-700 mb-2">Allergy Immunotherapy Delhi</h3></a>
+            <p class="text-center text-gray-600 text-sm">Our personalized immunotherapy helps your body build long-term resistance to allergens, reducing or eliminating the need for daily medication. </p>
+          </div>
+          <!-- End duplicate set -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section class="third-img-section">
+  <div class="container">
+    <div class="text-box text-justify">
+      <h2>BEST INFERTILITY TREATMENT IN DELHI</h2>
+      <h4>Infertility Treatment & Allergy Solutions</h4>
+      <p>
+        Get effective treatments for male and female infertility. Explore solutions for common conditions like PCOS, endometriosis, and tubal blockages. Find relief from allergies with comprehensive treatment options.
+      </p>
+      <p>
+        <b>Infertility and Allergy Treatment Solutions :</b>
+        This book presents an in-depth review of the different medical treatments for infertility as well as allergies. Infertility is a complicated and emotionally demanding process, with etiology that can involve both men and women. We shall discuss a variety of solutions ranging from balancing hormones to repairing structures.
+        We will also discuss successful treatments for allergies, a disorder impacting millions and one with profound effects on quality of life. Knowing what is available, from lifestyle changes to complex medical interventions, is the beginning of discovering the way to health and well-being.
+      </p>
+    </div>
+    <div class="image-box  float-img">
+      <img src="img video/first_right_side_img.jpg" alt="Ayurveda Image">
+    </div>
+  </div>
+</section>
+
+
+
+
+         
+
+          <div class="qr-code">
+            <h1><img src="img video/Dr. YK gupta numbar QR.jpg" alt=""></h1>
+            <h1> Book Your Appointment</h1>
+          </div>
+
+
+
+
+  
+
+
+<!-- +++++++++++++++++++first card section+++++++++++++++++++ -->
+ 
+
+<div class="first-card-section">
+ <h2 style="font-size: 2rem; font-weight: 700; color: black; margin-bottom: 10px; text-align: center;">Discover the Best Ayurvedic Treatments in Delhi</h2>
+  <div class="cards-container">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="icon-circle" aria-hidden="true">
+        <img src="https://www.aashaayurveda.com/uploads/product/1537871176.png" alt="">
+          <path d="M7.5 11.5c-.7 0-3-3-3-3s0-4 5-4c5 0 5 4 5 4s-2.3 3-3 3"></path>
+        </svg>
+      </div>
+      <div class="card-title">Infertility Treatment</div>
+      <div class="card-desc">
+        Infertility is a multifaceted medical condition that involves both men and women. Treatment strategies are very individualized and based on the causative factor, an individual's age, and health status. They may vary from lifestyle modifications and medications to surgery and sophisticated assisted reproductive technologies (ART)
+</div>
+      <button class="btn-readmore" aria-label="Read more about Infertility Treatment">
+                  <a style="width: 10vh; height: 5vh; " href="./Treatment/Infertility-treatment1.html">Read More</a>
+
+      </button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="icon-circle" aria-hidden="true">
+        <img src="https://www.aashaayurveda.com/uploads/product/1548326039.png" alt="">
+          <circle cx="12" cy="8" r="4"></circle>
+          <path d="M4 20v-2a4 4 0 0 1 8 0v2"></path>
+        </svg>
+      </div>
+      <div class="card-title">Female Infertility</div>
+      <div class="card-desc">
+ The principal causes of female infertility are ovulation disorders, damaged fallopian tubes, and diseases such as endometriosis and PCOS.
+
+      </div>
+      <button class="btn-readmore" aria-label="Read more about Infertility Treatment">
+                  <a style="width: 10vh; height: 5vh; " href="./Treatment/Female-infertility2.html">Read More</a>
+
+      </button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="icon-circle" aria-hidden="true">
+        <img src="https://www.aashaayurveda.com/uploads/product/1549448453.png" alt="">
+          <path d="M9 9c0-1 1-4 3-4s3 3 3 4-1 5-3 5-3-4-3-5z"></path>
+          <path d="M9 21v-3a3 3 0 0 1 6 0v3"></path>
+        </svg>
+      </div>
+      <div class="card-title">Male Infertility</div>
+      <div class="card-desc">
+        Male infertility is most commonly associated with problems in sperm production, functioning, or transport.
+
+      </div>
+                  <button class="btn-readmore" aria-label="Read more about Infertility Treatment">
+                  <a style="width: 10vh; height: 5vh; " href="./Treatment/Male-infertility3.html">Read More</a>
+
+      </button>
+        </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="icon-circle" aria-hidden="true">
+        <img src="https://www.aashaayurveda.com/uploads/product/1673947708.png" alt="">
+          <circle cx="9" cy="7" r="4"></circle>
+          <circle cx="16" cy="11" r="3"></circle>
+          <path d="M8 10l3 0"></path>
+        </svg>
+      </div>
+      <div class="card-title">Tubal Blockage Treatment</div>
+      <div class="card-desc">
+Blocked fallopian tubes are a major reason for female infertility because they keep the egg and sperm from coming together.
+      </div>
+      <button class="btn-readmore" aria-label="Read more about Infertility Treatment">
+                  <a style="width: 10vh; height: 5vh; " href="./Treatment/Tubal-Blockage-Treatment4.html">Read More</a>
+
+      </button>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <div class="icon-circle" aria-hidden="true">
+       <img src="https://www.aashaayurveda.com/uploads/product/1748948045.jpeg" alt="">
+          <path d="M7 22v-8h10v8"></path>
+          <path d="M12 10c-3 0-5-2-5-5 0-1.5 1-3 3-3s3 1.5 3 3c0 3-2 5-2 5z"></path>
+        </svg>
+      </div>
+      <div class="card-title">Hydrosalpinx Treatment</div>
+      <div class="card-desc">
+Hydrosalpinx is a particular form of tubal obstruction in which the fallopian tube becomes obstructed and filled with liquid, usually as a result of previous infection. The fluid is embryotoxic and can significantly lower the success rate for IVF.
+      </div>
+                  <button class="btn-readmore" aria-label="Read more about Infertility Treatment">
+                  <a style="width: 10vh; height: 5vh; " href="./Treatment/Hydrosalpinx-Treatment5.html">Read More</a>
+
+      </button>
+        </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+      <div class="icon-circle" aria-hidden="true">
+        <img src="https://www.aashaayurveda.com/uploads/product/1744368782.png" alt="">
+          <ellipse cx="12" cy="12" rx="5" ry="7"></ellipse>
+          <path d="M7 12c0 3 5 5 5 5s5-2 5-5-5-7-5-7-5 4-5 7z"></path>
+        </svg>
+      </div>
+      <div class="card-title">PCOD/PCOS</div>
+      <div class="card-desc">
+        PCOD (Polycystic Ovarian Disease) and PCOS (Polycystic Ovary Syndrome) are typical hormonal disorders that induce ovulation irregularities and fertility problems.
+
+      </div>
+              <button class="btn-readmore" aria-label="Read more about Infertility Treatment">
+                  <a style="width: 10vh; height: 5vh; " href="./Treatment/PCOD-PCOS6.html">Read More</a>
+
+      </button>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card">
+      <div class="icon-circle" aria-hidden="true">
+        <img src="https://www.aashaayurveda.com/uploads/product/1673948062.png" alt="">
+          <circle cx="12" cy="7" r="4"></circle>
+          <path d="M7 22v-3a5 5 0 0 1 10 0v3"></path>
+          <path d="M12 11v11"></path>
+        </svg>
+      </div>
+      <div class="card-title">Endometriosis</div>
+      <div class="card-desc">
+Endometriosis has been described as a painful condition in which tissue that is similar to the lining of the uterus proliferates outside of the uterus, causing inflammation and scarring that may interfere with fertility.
+      </div>
+              <button class="btn-readmore" aria-label="Read more about Infertility Treatment">
+                  <a style="width: 10vh; height: 5vh; " href="./Treatment/Endometriosis7.html">Read More</a>
+
+      </button>
+
+
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card">
+      <div class="icon-circle" aria-hidden="true">
+        <img src="https://www.aashaayurveda.com/uploads/product/1673947653.png" alt="">
+          <path d="M16 22V9"></path>
+          <path d="M8 10c-1 0-8 0-5-7 5 0 3 7 3 7z" stroke="#eb6c49" fill="none"></path>
+          <path d="M12 22v-8a2 2 0 0 1 4 0v8"></path>
+        </svg>
+      </div>
+      <div class="card-title" >Allergy Immunotherapy Delhi</div>
+      <div class="card-desc">
+Find the strength of immunotherapy in long-term allergy relief. Our skilled allergists tailor allergy shots to allow your body to develop a long-term tolerance to allergens and liberate you from medication on a daily basis.</div>
+      <button class="btn-readmore" aria-label="Read more about Infertility Treatment">
+                  <a style="width: 10vh; height: 5vh; " href="./Treatment/Allergy-Immunotherapy-Delhi8.html">Read More</a>
+
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+   <!-- Content -->
+
+    <style>
+
+        .content{
+           display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+        }
+
+
+
+       @keyframes slideToCenter {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .animate-slide-center {
+      animation: slideToCenter 1s ease-out forwards;
+    }
+    </style>
+
+
+<div class="text-justify">
+     <section class="third-img-section ">
+  <div class="container">
+    <div class="text-box">
+           <h2  class="uppercase">
+              In-Depth Guide to Infertility
+          </h2>
+
+          <p>
+            <b>Infertility Treatment & Allergy Solutions: Women & Men's Infertility, PCOS, Endometriosis & Beyond :</b>
+
+          This in-depthguidecovers powerful medical solutions to both infertility and allergies. Infertility is often a difficult and emotional process, and causes may plague both men and women. We will cover a variety of solutions, from fixing hormonal imbalance to fixing structural problems. Also, we will discuss allergy treatments, a condition that bothers millions and can profoundly affect quality of life. Knowing what options are available, ranging from lifestyle changes to sophisticated medical therapies, is the beginning of discovering the right road to health and wellness.</p> <br>
+          <b>Understanding Infertility: Causes & Treatments</b>
+          <p>
+            Infertility is when one cannot get pregnant after one year of normal, unprotected intercourse. A proper medical exam is important to determine the cause, which can be in the male or female, or both.
+          </p>
+</div>
+<div class="image-box  float-img">
+      <img src="img video/first_right_side_img.jpg" alt="Ayurveda Image">
+    </div>
+  </div>
+     </section>
+
+
+<section class="third-img-section">
+  <div class="container"> 
+    <div class="image-box float-img">
+      <img src="img video/first_right_side_img.jpg" alt="Ayurveda Image">
+    </div>
+    <div class="text-box"> 
+      <h2 class="uppercase">Best Female Infertility Treatments</h2>
+      <p>
+        Female infertility may be due to problems with ovulation, shape problems with the fallopian tubes or uterus, or endocrine imbalances. Treatment is designed specifically to the diagnosis.
+          <br>
+        <b>Ovulation Induction:</b> For women with infrequent or no ovulation, fertility medications such as clomiphene citrate or letrozole are employed to induce the ovaries to release and grow eggs.
+          <br>
+        <b>Intrauterine Insemination (IUI):</b> A concentrated sample of sperm is inserted directly into the uterus at the time of ovulation in order to boost the chances of fertilization.
+            <br>
+        <b>In Vitro Fertilization (IVF):</b> IVF is an extremely effective treatment in which eggs are removed from the ovaries, fertilized with a sperm in the laboratory, and embryos, formed after fertilization, are implanted in the uterus.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <section class="third-img-section">
+  <div class="container">
+    <div class="text-box">
+           <h2 class="uppercase">Best Male Infertility Solutions</h2>
+              <p>
+                Male infertility may result from reduced sperm count, weak or immotile sperm, or sperm shape or structural defects.
+<br>
+              <b>Lifestyle Modifications:</b> Small changes such as quitting cigarettes, limiting alcohol consumption, and consuming a nutritious diet can make a big difference to sperm quality.
+<br>
+              <b>Drugs:</b> Hormone therapy can correct imbalances responsible for impaired sperm development.
+<br>
+              <b>Operative Techniques:</b> Surgery can repair conditions like varicocele or obstruction in the reproductive tract.
+<br>
+              <b>Intracytoplasmic Sperm Injection (ICSI):</b> Frequently combined with IVF, ICSI entails inserting a single, healthy sperm directly into an egg, overcoming problems of sperm mobility.
+              </p>
+    </div>
+    <div class="image-box  float-img">
+      <img src="img video/first_right_side_img.jpg"Ayurveda Image">
+    </div>
+  </div>
+     </section>
+
+
+     <section class="third-img-section">
+  <div class="container"> 
+    <div class="image-box float-img">
+      <img src="img video/first_right_side_img.jpg" alt="Ayurveda Image">
+    </div>
+    <div class="text-box"> 
+      <h2 class="uppercase">Best tubal blockage treatings Delhi in india</h2>
+      <p>
+        <b>Tubal Blockage Treatment:</b> Blocked tubes keep the egg and sperm from encountering each other. Alternatives include laparoscopic surgery to excise scar tissue or, for irreparably blocked tubes, IVF which circumvents the tubes altogether.
+<br>
+        <b>Hydrosalpinx Treatment:</b> If one fallopian tube becomes filled with fluid, it is poisonous to an embryo. Surgical tube removal (salpingectomy) is usually advised prior to IVF to maximize success rates.
+<br>
+        <b>PCOS (Polycystic Ovary Syndrome) Treatment:</b> PCOS, a hormonal disease, can be treated with life-style modification, fertility drugs to stimulate ovulation, and in selected cases, laparoscopic ovarian drilling to achieve a regular cycle.
+<br>
+        <b>Endometriosis Treatment:</b> Endometriosis, when uterine-like tissue is found outside the uterus, can be treated by laparoscopic removal of implants or, in advanced cases, by assisted reproductive technologies such as IVF
+      </p>
+    </div>
+  </div>
+</section>
+</div>
+
+
+
+
+
+<!-- ++++++++++++++++Section 2: Your Health Guide+++++++++++++++++++++++++++ -->
+
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white text-gray-900 font-sans">
+
+    <!-- Section 1: Your Health Guide -->
+    <section class="mb-12">
+      <h2 class="uppercase text-3xl font-extrabold text-center mb-6 underline decoration-yellow-500 decoration-4">
+                BEST INFERTILITY AYURVEDIC TREATMENT
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <a href="index.html"  rel="noopener" class="img-container shadow-lg transition-shadow hover:shadow-2xl">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7cfe28fd-b634-472a-b9ad-695d4b77c450.png" alt="Traditional Ayurveda setup with herbs and mortar and pestle on wooden table" onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/708250e1-7a91-45c6-b500-b2f0539f88ef.png';" />
+          <div class="overlay-text img-text">Ayurveda is the Science of Life</div>
+        </a>
+        <a href="index.html" rel="noopener" class="img-container shadow-lg transition-shadow hover:shadow-2xl border border-green-600">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9c32a5b1-c859-4ef8-b360-3faa6b0561fd.png" alt="Infographic of Ayurvedic diet for infertility showing ingredients and measurements" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Not+Found';" />
+          <div class="overlay-text img-text">Ayurvedic Diet for Infertility</div>
+        </a>
+        <a href="index.html"  rel="noopener" class="img-container shadow-lg transition-shadow hover:shadow-2xl bg-green-100">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/10ac6606-bf06-4eb0-b8f3-10627f99f54c.png" alt="Illustrated diet plan chart for PCOD and PCOS with colorful food groups" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Not+Found';" />
+          <div class="overlay-text img-text">Diet Plan For PCOD/PCOS</div>
+        </a>
+        <a href="index.html"  rel="noopener" class="img-container shadow-lg transition-shadow hover:shadow-2xl">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7ce8fd0f-565c-4dd5-bca0-ffbcf371c176.png" alt="Woman smiling joyfully with baby in a warm, homey environment" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Not+Found';" />
+          <div class="overlay-text img-text">Best Alternative To IVF</div>
+        </a>
+      </div>
+    </section>
+
+
+
+
+
+
+
+        <!-- Content  -->
+<div class="text-justify">
+        <section class="third-img-section">
+  <div class="container"> 
+    <div class="image-box float-img">
+      <img src="img video/first_right_side_img.jpg" alt="Ayurveda Image">
+    </div>
+    <div class="text-box">
+           <h2 class="uppercase">
+              Hydrosalpinx Treatment Delhi in india 
+          </h2>
+            <p>
+              Navigating fertility issues can be daunting, and receiving a diagnosis such as hydrosalpinx only adds to the burden. Hydrosalpinx is when one of the fallopian tubes is blocked and filled with fluid. It can go a long way toward making the journey to parenthood much more difficult. The silver lining is that Delhi has all the effective treatments in place, from high-tech surgeries to alternative therapies.
+              <br>
+              <b>What is Hydrosalpinx and Why Does It Matter ?</b>
+              Consider your fallopian tubes to be a tube through which the egg passes from the ovary to the uterus. If a tube becomes blocked with fluid, it forms an obstacle. The fluid may also be toxic to an embryo and prevent a natural conception or conception through procedures such as IVF. Removal of this blockage is an important step in enhancing your possibility of successful pregnancy.
+            </p>
+        </div>
+  </div>
+</section>
+
+
+   <section class="third-img-section">
+  <div class="container">
+    <div class="text-box">
+           <h2 class="uppercase">Understanding and Treating PCOD/PCOS in Delhi</h2>
+
+                <p>
+                  Polycystic Ovary Syndrome (PCOS) and Polycystic Ovarian Disease (PCOD) are hormonal and metabolic conditions that are extremely prevalent in women of childbearing age. Although the conditions are frequently used interchangeably, PCOS represents a more debilitating metabolic disorder. Both disorders have the potential to cause a variety of symptoms ranging from irregular menstruation, weight gain, acne, hirsutism, and sterility.
+                    <br>
+                  Treatment of PCOD/PCOS is very individualized and in most cases is aimed at treating the symptoms as well as the causes. In Delhi, treatment possibilities vary extensively, ranging from diet and lifestyle modification to specialized medical treatment
+                </p>
+          </div>
+    <div class="image-box  float-img">
+      <img src="img video/first_right_side_img.jpg" alt="Ayurveda Image">
+    </div>
+  </div>
+     </section>
+
+
+
+
+
+
+    
+        <section class="third-img-section">
+  <div class="container"> 
+    <div class="image-box float-img">
+      <img src="img video/first_right_side_img.jpg" alt="Ayurveda Image">
+    </div>
+    <div class="text-box">
+           <h2 class="uppercase">best Endometriosis Treatment delhi in india</h2>
+                  <p>
+                    Endometriosis is an ongoing condition in which tissue resembling the uterine lining appears elsewhere outside the uterus, leading to pain, inflammation, and possible infertility. The treatment is extremely individualized, based on the severity of symptoms, the spread of the disease, and whether conception is desired.
+                    <br>
+                    Delhi has a wide variety of sophisticated treatments, ranging from medical therapy to minimal access surgeries.
+                        <br>
+                    <h2>Main Treatment Techniques</h2>
+                  
+                      <b>Medical Management :</b> It is usually the initial therapy, and it is symptom-oriented.
+                      <br>
+                      <b>Pain Medications :</b> Pain is managed with either over-the-counter pain medications or prescription strength NSAIDs.
+                      <br>
+                      <b>Hormone Therapy : </b>These are hormonal contraception, progestin therapy, or Gonadotropin-releasing hormone (GnRH) agonists. These are used to suppress endometrial tissue growth by modulating hormone levels.
+                      <br>
+                      <b>Surgical Treatment:</b> Surgery is a primary treatment for moderate to severe cases, especially if fertility is an issue.
+                      <br>
+                      <b>Laparoscopic Surgery:</b> Both diagnosis and treatment of endometriosis are considered the gold standard. A laparoscope, a small camera, is used by a surgeon to visualize the pelvic organs and remove or destroy the endometrial implants, cysts, and scar tissue. This is a minimally invasive procedure that results in less pain and quicker recovery.
+                  </p>
+                    </div>
+  </div>
+</section>
+
+
+
+<section class="third-img-section">
+  <div class="container">
+    <div class="text-box">
+           <h2 class="uppercase text-justify">Comprehensive Allergy Treatment</h2>
+                <p>
+                  Allergies are a situation where the immune system overreacts against an innocuous substance. <br>
+                  <b>Avoidance:</b> The best measure to contain allergies is avoiding the causatives, for instance, foods, pollen, or pet fur. <br>
+                  <b>Medications:</b> Nonprescription and prescription drugs such as antihistamines, decongestants, and nasal corticosteroids are applied to control symptoms.<br>
+                  <b>Allergy Immunotherapy:</b> A long-term therapy, or allergy shots, consists of injections to slowly desensitize the body to an allergen, yielding long-term relief.<br>
+
+                  The proper route of treatment demands a complete diagnosis and an individualized path. Meeting with a healthcare provider is the ideal method for determining the best course of treatment for your individual case.
+                </p>
+          </div>
+    <div class="image-box  float-img">
+      <img src="img video/first_right_side_img.jpg" alt="Ayurveda Image">
+    </div>
+  </div>
+     </section>
+</div>
+
+
+
+
+
+    <!-- Section 2: Your Health Tutorials (New Section with Same Design) -->
+    <section style="margin-top: 10vh;">
+      <h2 class="text-3xl font-extrabold text-center mb-6 underline decoration-yellow-500 decoration-4">
+            Ayurvedic Doctor for Consultation in Delhi
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <a href="index.html" rel="noopener" class="img-container shadow-lg transition-shadow hover:shadow-2xl rounded-lg overflow-hidden">
+          <img src="img video/forth.jpg" alt="Ayurveda doctor explaining double blockage symptoms and remedies on a pink background" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Not+Found';" />
+          <div class="overlay-text img-text">Hydrosalpinx Treatment</div>
+        </a>
+        <a href="index.html" rel="noopener" class="img-container shadow-lg transition-shadow hover:shadow-2xl rounded-lg overflow-hidden">
+          <img src="img video/doctior.jpg" alt="Hindi language tutorial image about fallopian tube blockage symptoms and natural remedies" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Not+Found';" />
+          <div class="overlay-text img-text">PCOD/PCOS</div>
+        </a>
+        <a href="index.html" rel="noopener" class="img-container shadow-lg transition-shadow hover:shadow-2xl rounded-lg overflow-hidden">
+          <img src="img video/patta imag doctior.jpg" alt="Hands applying fertility massage with step by step instructions in Hindi" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Not+Found';" />
+          <div class="overlay-text img-text">Endometriosis</div>
+        </a>
+        <a href="index.html" rel="noopener" class="img-container shadow-lg transition-shadow hover:shadow-2xl rounded-lg overflow-hidden">
+          <img src="img video/second doctior.jpg" alt="Diagram and expert showing Uttar Basti Ayurvedic procedure for women's health" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Not+Found';" />
+          <div class="overlay-text img-text">Allergy Immunotherapy</div>
+        </a>
+      </div>
+    </section>
+  </main>
+  
+
+
+
+
+
+
+
+
+
+<!-- +++++++++++++++++++Footer+++++++++++++++++++ -->
+
+   <!-- Beautiful Footer -->
+    <footer id="footer" style="position: relative;" class="bg-gradient-to-r from-blue-900 to-teal-500 text-white p-6 py-8">       
+      <!-- <div  class="container mx-auto px-4 border-t-2 border-indigo-400 pb-2"> -->
+      <div  class="container mx-auto px-4 ">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Left Section: Quick Links -->
+                <div class="w-full md:w-1/3 md:mb-0">
+                    <h3 class="text-base">Quick Links
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="index.html" class="footer-link flex items-center text-indigo-200 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                </svg>
+                                Home
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="About/about.html" class="footer-link flex items-center text-indigo-200 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                </svg>
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Blog/blog.html" class="footer-link flex items-center text-indigo-200 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                </svg>
+                                Blogs
+                            </a>
+                        </li>
+                         <li>
+                            <a href="FAQ/faq.html" class="footer-link flex items-center text-indigo-200 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                </svg>
+                                FAQ
+                            </a>
+                        </li>
+                         <li>
+                            <a href="Contact us/Contact-us.html" class="footer-link flex items-center text-indigo-200 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                </svg>
+                                content us
+                              </a>                              
+                            </li>
+                          </ul>                                         
+                        </div>
+
+                        
+                        <div class="w-full md:w-1/4 md:mb-0 flex ">
+                          <img src="img video/logo.jpg" alt="Logo"
+                               class=" object-contain rounded-2xl shadow-lg bg-white p-2" />
+                        </div>
+
+
+                <!-- Center Section: Location Info -->
+                <div class="w-full md:w-1/3 md:mb-0">
+                    <div class="location-container bg-indigo-800 bg-opacity-40 rounded-lg p-4 ">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-300" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>011-32578115
+                        <h3 class="text-lg font-semibold">Our Location</h3>
+                        <p class="text-indigo-200">B1, 24 Bharat Vihar, Kakrola, Delhi, 110078 (Dwarka)</p>
+                        <p class="text-indigo-200">+91 9312371118</p>
+
+                    </div>
+                </div>
+
+                <!-- Right Section: Google Location Link -->
+                <div class="w-full md:w-1/3 text-center md:text-right">
+                    <a >
+                       <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14020.976602519315!2d77.2058218!3d28.5323803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7789e075718915a3!2sS+Daryani+%26+Associates!5e0!3m2!1sen!2sin!4v1556689725694!5m2!1sen!2sin" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 px-3 py-5 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-lg" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Map showing location of S Daryani & Associates Chartered Accountants.">
+                       </iframe>
+                        <!-- <div class="flex items-center justify-center md:justify-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd" />
+                            </svg>
+                            View on Google Maps
+                        </div> -->
+                    </a>
+                    <!-- <div class="mt-4 text-indigo-300 text-sm">
+                        <p>Need directions? Click above</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Bottom Copyright Section -->
+            <div class="border-t border-indigo-500 mt-8 pt-6 text-center text-white">                         
+              <p> &copy; 2025 Novlok Ayurvedic. All rights reserved.</p>
+            </div>
+           
+          </div>
+         </h3>
+    </footer>
+
+
+</body>
+</html>

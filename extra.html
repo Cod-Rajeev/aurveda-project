@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-light: #6366f1;
+            --secondary: #10b981;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            min-height: 100vh;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                position: fixed;
+                z-index: 50;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+            }
+            .sidebar.active {
+                transform: translateX(0);
+            }
+        }
+
+        .sidebar-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar-link.active {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-container {
+            height: 300px;
+        }
+
+        .notification-dot {
+            top: -0.5rem;
+            right: -0.5rem;
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="dashboard-grid">
+        <!-- Sidebar -->
+        <aside class="sidebar bg-indigo-700 text-white">
+            <div class="p-4 border-b border-indigo-600 flex items-center justify-between">
+                <h1 class="text-xl font-bold flex items-center">
+                    <i class="fas fa-cube mr-2"></i>
+                    <span>AdminKit</span>
+                </h1>
+                <button id="mobile-menu-close" class="md:hidden">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="p-4">
+                <div class="flex items-center mb-6">
+                    <img src="https://placehold.co/100x100" alt="Admin profile picture showing a professional headshot with blue background" class="w-10 h-10 rounded-full mr-3">
+                    <div>
+                        <p class="font-medium">Admin User</p>
+                        <p class="text-xs text-indigo-200">Super Admin</p>
+                    </div>
+                </div>
+                
+                <nav class="space-y-1">
+                    <a href="#" class="sidebar-link flex items-center px-3 py-2 rounded-lg transition active">
+                        <i class="fas fa-tachometer-alt mr-3"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#" class="sidebar-link flex items-center px-3 py-2 rounded-lg transition">
+                        <i class="fas fa-users mr-3"></i>
+                        <span>Users</span>
+                    </a>
+                    <a href="#" class="sidebar-link flex items-center px-3 py-2 rounded-lg transition">
+                        <i class="fas fa-box mr-3"></i>
+                        <span>Products</span>
+                    </a>
+                    <a href="#" class="sidebar-link flex items-center px-3 py-2 rounded-lg transition">
+                        <i class="fas fa-shopping-cart mr-3"></i>
+                        <span>Orders</span>
+                        <span class="ml-auto bg-red-500 text-xs text-white px-2 py-1 rounded-full">12</span>
+                    </a>
+                    <a href="#" class="sidebar-link flex items-center px-3 py-2 rounded-lg transition">
+                        <i class="fas fa-chart-line mr-3"></i>
+                        <span>Analytics</span>
+                    </a>
+                    <a href="#" class="sidebar-link flex items-center px-3 py-2 rounded-lg transition">
+                        <i class="fas fa-cog mr-3"></i>
+                        <span>Settings</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <!-- Header -->
+            <header class="bg-white shadow-sm p-4 flex items-center justify-between">
+                <button id="mobile-menu-open" class="md:hidden">
+                    <i class="fas fa-bars text-gray-600"></i>
+                </button>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <button class="p-1 rounded-full hover:bg-gray-100">
+                            <i class="fas fa-bell text-gray-600"></i>
+                            <span class="notification-dot absolute bg-red-500 rounded-full flex items-center justify-center text-xs text-white">3</span>
+                        </button>
+                    </div>
+                    <div class="relative">
+                        <button class="p-1 rounded-full hover:bg-gray-100">
+                            <i class="fas fa-envelope text-gray-600"></i>
+                            <span class="notification-dot absolute bg-red-500 rounded-full flex items-center justify-center text-xs text-white">5</span>
+                        </button>
+                    </div>
+                    <div class="relative">
+                        <button class="flex items-center space-x-2 hover:bg-gray-100 rounded-full p-1">
+                            <img src="https://placehold.co/100x100" alt="Small circular admin profile picture thumbnail" class="w-8 h-8 rounded-full">
+                            <span class="hidden md:inline text-sm font-medium text-gray-700">Admin User</span>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Dashboard Overview</h2>
+                
+                <!-- Stats Cards -->
+              
+                
+                <!-- Charts Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    <!-- Revenue Chart -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Revenue Overview</h3>
+                            <div class="flex space-x-2">
+                                <button class="text-xs px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full">Monthly</button>
+                                <button class="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Weekly</button>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="revenueChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- User Growth Chart -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-gray-800">User Growth</h3>
+                            <div class="flex space-x-2">
+                                <button class="text-xs px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full">Monthly</button>
+                                <button class="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full">Weekly</button>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="userChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+
+        // Revenue Chart
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+        const revenueChart = new Chart(revenueCtx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Revenue',
+                    data: [12000, 15000, 18000, 22000, 25000, 42000],
+                    backgroundColor: 'rgba(79, 70, 229, 0.1)',
+                    borderColor: 'rgba(79, 70, 229, 0.8)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // Users Chart
+        const userCtx = document.getElementById('userChart').getContext('2d');
+        const userChart = new Chart(userCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'New Users',
+                    data: [320, 410, 580, 740, 920, 1250],
+                    backgroundColor: 'rgba(16, 185, 129, 0.7)',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // Simulate fetching data from backend (mock for now - replace with actual API calls)
+        async function fetchData() {
+            try {
+                // These would be replaced with actual fetch calls to your Node.js backend
+                /* 
+                const response = await fetch('/api/dashboard/stats');
+                const data = await response.json();
+                */
+                
+                // Mock response for demonstration
+                return {
+                    totalUsers: 1254,
+                    totalRevenue: 42578,
+                    activeProducts: 328,
+                    pendingOrders: 47
+                };
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                return null;
+            }
+        }
+
+        // Initialize the dashboard
+        document.addEventListener('DOMContentLoaded', async function() {
+            const data = await fetchData();
+            
+            if (data) {
+                // Update DOM with fetched data
+                document.querySelector('h3:nth-child(1)').textContent = data.totalUsers.toLocaleString();
+                document.querySelector('h3:nth-child(2)').textContent = `$${data.totalRevenue.toLocaleString()}`;
+                document.querySelector('h3:nth-child(3)').textContent = data.activeProducts.toLocaleString();
+                document.querySelector('h3:nth-child(4)').textContent = data.pendingOrders.toLocaleString();
+            }
+        });
+    </script>
+</body>
+</html>

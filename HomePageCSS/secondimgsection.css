@@ -1,0 +1,36 @@
+ /* Custom styles for image hover effect and text overlay */
+    .img-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.375rem; /* Rounded corners like Tailwind rounded-md */
+    }
+    .img-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .img-container:hover img {
+      transform: scale(1.05);
+    }
+    .overlay-text {
+      position: absolute;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.75);
+      width: 100%;
+      padding: 0.5rem 0;
+      text-align: center;
+      font-weight: 600;
+      color: #222;
+      backdrop-filter: saturate(180%) blur(5px);
+      transition: background 0.3s ease;
+    }
+    .img-container:hover .overlay-text {
+      background: rgba(255, 255, 255, 0.85);
+    }
+    /* Responsive tweaks */
+    @media (max-width: 640px) {
+      .img-text {
+        font-size: 0.875rem;
+      }
+    }

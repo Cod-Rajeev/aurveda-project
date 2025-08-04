@@ -1,0 +1,17 @@
+ /* Custom styles for the hamburger menu animation */
+  .hamburger div {
+    transition: all 0.3s ease;
+  }
+  input[type="checkbox"]:checked ~ nav ul {
+    display: flex;
+  }
+  /* Hamburger animation */
+  input[type="checkbox"]:checked + label div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  input[type="checkbox"]:checked + label div:nth-child(2) {
+    opacity: 0;
+  }
+  input[type="checkbox"]:checked + label div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }

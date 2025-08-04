@@ -1,0 +1,213 @@
+ .contact {
+      position: relative;
+      width: 100%;
+      height: 20vh;
+      background: linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('https://images.unsplash.com/photo-1522125670776-3c7abb882bc2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGhvbmV8ZW58MHx8MHx8fDA%3D')
+          no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* Heading */
+    .contact h1 {
+      font-weight: 700;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.2em;
+      user-select: none;
+    }
+
+    /* Nav container */
+    .contact nav {
+      font-size: clamp(0.6rem, 1.5vw, 1rem);
+      display: flex;
+      gap: 1rem;
+      font-weight: 500;
+      user-select: none;
+    }
+
+    /* Nav links */
+    .contact nav a {
+      text-decoration: none;
+      color: #eee;
+      transition: color 0.3s ease;
+      position: relative;
+      padding: 0 0.15em;
+    }
+
+    .contact nav a:hover {
+      color: #a3c938;
+    }
+
+    /* The last link named contact is highlighted */
+    .contact nav a:last-child {
+      color: #a3c938;
+      font-weight: 600;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .contact {
+        height: 25vh;
+        padding: 0 1rem;
+      }
+
+      .contact nav {
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+    }
+
+
+
+
+
+
+    /* +++++++++++contact data  */
+
+     /* General Reset & base */
+    
+    /* Container using same design sensibility */
+
+    form {
+       margin: 2rem;
+    }
+
+
+    .contact-data {
+       margin: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      max-width: 900px;
+      margin-top: 20vh;
+      /* margin-left: 45vh; */
+    }
+
+    /* Input styles with icons */
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid #bfc2b9;
+      border-radius: 3px;
+      padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: 600;
+      color: #547a34;
+      background-color: #f9f9f9;
+      transition: border-color 0.3s ease, background-color 0.3s ease;
+      resize: vertical;
+      min-height: 44px;
+      margin-left: 10ox;
+    }
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #7ea230;
+      background-color: #fcfff1;
+      font-style: normal;
+      color: #2f4500;
+      margin-left: 5vh;
+    }
+    textarea {
+      min-height: 110px;
+      margin-left: 5vh;
+
+    }
+
+    /* Icon container for inputs */
+    .input-icon {
+      position: relative;
+      
+    }
+
+
+
+    .input-icon svg {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      fill: #7ea230;
+      width: 18px;
+      height: 18px;
+      pointer-events: none;
+      opacity: 0.6;
+      transition: fill 0.3s ease;
+    }
+    input:focus + svg,
+    textarea:focus + svg {
+      fill: #547a34;
+      opacity: 1;
+    }
+
+    /* Placeholder styling */
+    ::placeholder {
+      color: #7a8d4d;
+      font-style: italic;
+      opacity: 1;
+    }
+
+    /* Message textarea should be on right side full height */
+    textarea {
+      padding-left: 1rem;
+    }
+
+    /* Button styling - consistent with green theme */
+    .submit-button {
+      grid-column: 1 / -1;
+      justify-self: center;
+      background-color: #6c8e31;
+      color: white;
+      border: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.75rem 1.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      box-shadow: 0 3px 6px rgba(83, 123, 40, 0.4);
+      transition: background-color 0.25s ease;
+      user-select: none;
+      max-width: 220px;
+    }
+    .submit-button:hover,
+    .submit-button:focus {
+      background-color: #4d6620;
+      outline: none;
+      box-shadow: 0 4px 10px rgba(83, 123, 40, 0.7);
+    }
+
+    /* Consent text below button */
+    .consent-text {
+      grid-column: 1 / -1;
+      max-width: 700px;
+      margin: 1rem auto 0;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #555a33;
+      text-align: center;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 720px) {
+      .contact-data {
+        grid-template-columns: 1fr;
+      }
+      textarea {
+        min-height: 140px;
+      }
+      .submit-button {
+        max-width: 100%;
+      }
+    }
