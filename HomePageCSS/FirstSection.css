@@ -12,7 +12,7 @@
     grid-template-columns: 1fr 2fr; */
     gap: 2rem;
     align-items: start;
-      height: 50vh; /* ✅ Full screen */
+      /* height: 50vh; ✅ Full screen */
       
   }
 
@@ -115,9 +115,10 @@
   .qr-code {
     position: absolute;
     width: 30%;
-    margin-top: 19vh;
+    /* margin-top: vh; */
+
     text-align: center;
-    /* margin-right: 7rem; */
+    margin-right: 7rem;
     font-size: 10px;
   }
 }
@@ -146,15 +147,15 @@
   @media (max-width: 900px) {
     .first-container {
       grid-template-columns: 1fr;
-      max-width: 90vw;
+      /* max-width: 90vw; */
       margin: 1rem auto auto;
       margin-top: 10vh;
     }
-    .first-image-section {
+    /* .first-image-section {
       /* aspect-ratio: auto; */
       /* max-height: 300px; */
-      overflow: hidden;
-    }
+      /* overflow: hidden; */
+    /* } */ */
     .first-cards-container {
       justify-content: center;
       gap: 1rem;

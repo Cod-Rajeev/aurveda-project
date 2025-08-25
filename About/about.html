@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="../HomePageCSS/secondNavbar.css">
-    <link rel="stylesheet" href="about.css">
 
      <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -46,116 +45,101 @@
 
     
  <!-- Navbar -->
-
-<header class="w-full border-b border-gray-300 z-index-100 relative  top-8 left-0 bg-gray-50 z-30">
-  <div class="z-index-100 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex z-index-100 items-center justify-between h-16">
-      <!-- Logo left side -->
-      <div class="z-index-100 ml-40  flex-shrink-0 flex items-center">
-        <img  class="w-40 rounded-3xl"
+<!-- Navbar -->
+<header class="w-full border-b border-gray-300 bg-gray-50 relative top-8 left-0 z-30">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      
+      <!-- Logo -->
+      <div class="ml-0 md:ml-10 flex items-center">
+        <img class="md:w-40 w-20 rounded-3xl"
           src="../img video/logo.jpg" 
-          alt="Minimalistic logo with stylized leaf shapes in green and orange arranged in a circle around a subtle flame, symbolizing nature and wellness" 
-          class="h-10 w-auto"
-          onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2579d241-6081-47cd-b1a3-d8bd4b6bd4c2.png';"
+          alt="Clinic Logo"
         />
       </div>
       
-      <!-- Navigation menu right side -->
-      <div class="hidden md:flex space-x-8">
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8" id="desktop-menu">
         <a href="../index.html" class="text-gray-700 hover:text-green-600 font-semibold">HOME</a>
         <a href="about.html" class="text-gray-700 hover:text-green-600 font-semibold">ABOUT US</a>
-
-
-<li class="relative group list-none">
-        <a href="#" class="text-gray-700 hover:text-green-600 font-semibold">BEST INFERTILITY TREATMENT</a>
         <!-- Dropdown -->
-        <ul class="absolute hidden group-hover:block bg-white text-black mt-2 py-2 rounded shadow-lg min-w-[150px]">
-          <li><a href="../Treatment/Infertility-treatment1.html" class="block px-4 py-2 hover:bg-gray-100">INFERTILITY TREATMENT</a></li>
-          <li><a href="../Treatment/Female-infertility2.html" class="block px-4 py-2 hover:bg-gray-100">FEMALE INFERTILITY</a></li>
-          <li><a href="../Treatment/Male-infertility3.html" class="block px-4 py-2 hover:bg-gray-100">MALE INFERTILITY</a></li>
-          <li><a href="../Treatment/Tubal-Blockage-Treatment4.html" class="block px-4 py-2 hover:bg-gray-100">TUBAL BLOCKAGE TREATMENT</a></li>
-          <li><a href="../Treatment/Hydrosalpinx-Treatment5.html" class="block px-4 py-2 hover:bg-gray-100">HYDROSALPINX TREATMENT</a></li>
-          <li><a href="../Treatment/PCOD-PCOS6.html" class="block px-4 py-2 hover:bg-gray-100">PCOD-PCOS</a></li>
-          <li><a href="../Treatment/Endometriosis7.html" class="block px-4 py-2 hover:bg-gray-100">ENDOMETRIOSIS</a></li>
-          <li><a href="../Treatment/Allergy-Immunotherapy-Delhi8.html" class="block px-4 py-2 hover:bg-gray-100">ALLERGY TREATMENT</a></li>
-        </ul>
-      </li>
-
-
-        <!-- <a href="./PANCHKARMA/panchkarma.html" class="text-gray-600 hover:text-green-600 font-semibold">PANCHKARMA</a> -->
-        <a href="../Blog/blog.html" class="text-gray-700 hover:text-green-600 font-semibold ">BLOG</a>
+         <div class="relative group">
+          <a href="#" class="text-gray-700 hover:text-green-600 font-semibold">BEST INFERTILITY TREATMENT</a>
+          <ul class="absolute hidden group-hover:block bg-white text-black mt-2 py-2 rounded shadow-lg min-w-[180px]">
+            <li><a href="../Treatment/Infertility-treatment1.html" class="block px-4 py-2 hover:bg-gray-100">INFERTILITY TREATMENT</a></li>
+            <li><a href="../Treatment/Female-infertility2.html" class="block px-4 py-2 hover:bg-gray-100">FEMALE INFERTILITY</a></li>
+            <li><a href="../Treatment/Male-infertility3.html" class="block px-4 py-2 hover:bg-gray-100">MALE INFERTILITY</a></li>
+            <li><a href="../Treatment/Tubal-Blockage-Treatment4.html" class="block px-4 py-2 hover:bg-gray-100">TUBAL BLOCKAGE TREATMENT</a></li>
+            <li><a href="../Treatment/Hydrosalpinx-Treatment5.html" class="block px-4 py-2 hover:bg-gray-100">HYDROSALPINX TREATMENT</a></li>
+            <li><a href="../Treatment/PCOD-PCOS6.html" class="block px-4 py-2 hover:bg-gray-100">PCOD-PCOS</a></li>
+            <li><a href="../Treatment/Endometriosis7.html" class="block px-4 py-2 hover:bg-gray-100">ENDOMETRIOSIS</a></li>
+            <li><a href="../Treatment/Allergy-Immunotherapy-Delhi8.html" class="block px-4 py-2 hover:bg-gray-100">ALLERGY TREATMENT</a></li>
+          </ul>
+        </div>
+        <a href="../Blog/blog.html" class="text-gray-700 hover:text-green-600 font-semibold">BLOG</a>
         <a href="../FAQ/faq.html" class="text-gray-700 hover:text-green-600 font-semibold">FAQ</a>
         <a href="../Contact us/Contact-us.html" class="text-gray-700 hover:text-green-600 font-semibold">CONTACT US</a>
-
-          <a href="tel:+9312371118" aria-label="Call WhatsApp" >
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-12 h-12" viewBox="0 0 48 48">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#fff" d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z"></path><path fill="#fff" d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z"></path><path fill="#cfd8dc" d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z"></path><path fill="#40c351" d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z"></path><path fill="#fff" fill-rule="evenodd" d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z" clip-rule="evenodd"></path>
-            </svg>
-          </a>
-    
       </div>
 
       <!-- Mobile menu button -->
       <div class="md:hidden flex items-center">
-        <input type="checkbox" id="menu-toggle" class="hidden" />
-        <label for="menu-toggle" class="hamburger cursor-pointer flex flex-col space-y-1.5">
-          <div class="w-6 h-0.5 bg-gray-700"></div>
-          <div class="w-6 h-0.5 bg-gray-700"></div>
-          <div class="w-6 h-0.5 bg-gray-700"></div>
-        </label>
+        <button id="menu-toggle" class="flex flex-col space-y-1.5 focus:outline-none" aria-label="Open menu">
+          <span class="w-6 h-0.5 bg-gray-700"></span>
+          <span class="w-6 h-0.5 bg-gray-700"></span>
+          <span class="w-6 h-0.5 bg-gray-700"></span>
+        </button>
       </div>
     </div>
   </div>
-  
-  <!-- Mobile menu -->
-  <nav class="md:hidden px-4 pb-4">
-    <ul class="hidden flex-col space-y-2 font-semibold text-gray-700">
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="md:hidden px-4 pb-4 hidden">
+    <ul class="flex flex-col space-y-2 font-semibold text-gray-700">
       <li><a href="../index.html" class="block p-2 hover:bg-green-100 rounded">HOME</a></li>
       <li><a href="about.html" class="block p-2 hover:bg-green-100 rounded">ABOUT US</a></li>
-
-      <li class="relative group list-none">
-        <a href="#" class="text-gray-900 hover:text-green-600 font-semibold text-lg">BEST INFERTILITY TREATMENT</a>
-        <!-- Dropdown -->
-        <ul class="absolute hidden group-hover:block bg-white text-black mt-2 py-2 rounded shadow-lg min-w-[150px]">
-          <li><a href="../Treatment/Infertility-treatment1.html" class="block px-4 py-2 hover:bg-gray-100">INFERTILITY TREATMENT</a></li>
-          <li><a href="../Treatment/Female-infertility2.html" class="block px-4 py-2 hover:bg-gray-100">FEMALE INFERTILITY</a></li>
-          <li><a href="../Treatment/Male-infertility3.html" class="block px-4 py-2 hover:bg-gray-100">MALE INFERTILITY</a></li>
-          <li><a href="../Treatment/Tubal-Blockage-Treatment4.html" class="block px-4 py-2 hover:bg-gray-100">TUBAL BLOCKAGE TREATMENT</a></li>
-          <li><a href="../Treatment/Hydrosalpinx-Treatment5.html" class="block px-4 py-2 hover:bg-gray-100">HYDROSALPINX TREATMENT</a></li>
-          <li><a href="../Treatment/PCOD-PCOS6.html" class="block px-4 py-2 hover:bg-gray-100">PCOD-PCOS</a></li>
-          <li><a href="../Treatment/Endometriosis7.html" class="block px-4 py-2 hover:bg-gray-100">ENDOMETRIOSIS</a></li>
-          <li><a href="../Treatment/Allergy-Immunotherapy-Delhi8.html" class="block px-4 py-2 hover:bg-gray-100">ALLERGY TREATMENT</a></li>
-        </ul>
+      <!-- Mobile Dropdown -->
+      <li class="relative">
+        <details>
+          <summary class="cursor-pointer block p-2 hover:bg-green-100 rounded">BEST INFERTILITY TREATMENT</summary>
+          <ul class="pl-4 space-y-1 mt-2">
+            <li><a href="../Treatment/Infertility-treatment1.html" class="block px-4 py-2 hover:bg-gray-100">INFERTILITY TREATMENT</a></li>
+            <li><a href="../Treatment/Female-infertility2.html" class="block px-4 py-2 hover:bg-gray-100">FEMALE INFERTILITY</a></li>
+            <li><a href="../Treatment/Male-infertility3.html" class="block px-4 py-2 hover:bg-gray-100">MALE INFERTILITY</a></li>
+            <li><a href="../Treatment/Tubal-Blockage-Treatment4.html" class="block px-4 py-2 hover:bg-gray-100">TUBAL BLOCKAGE TREATMENT</a></li>
+            <li><a href="../Treatment/Hydrosalpinx-Treatment5.html" class="block px-4 py-2 hover:bg-gray-100">HYDROSALPINX TREATMENT</a></li>
+            <li><a href="../Treatment/PCOD-PCOS6.html" class="block px-4 py-2 hover:bg-gray-100">PCOD-PCOS</a></li>
+            <li><a href="../Treatment/Endometriosis7.html" class="block px-4 py-2 hover:bg-gray-100">ENDOMETRIOSIS</a></li>
+            <li><a href="../Treatment/Allergy-Immunotherapy-Delhi8.html" class="block px-4 py-2 hover:bg-gray-100">ALLERGY TREATMENT</a></li>
+          </ul>
+        </details>
       </li>
-
       <li><a href="../Blog/blog.html" class="block p-2 hover:bg-green-100 rounded">BLOG</a></li>
       <li><a href="../FAQ/faq.html" class="block p-2 hover:bg-green-100 rounded">FAQ</a></li>
       <li><a href="../Contact us/Contact-us.html" class="block p-2 hover:bg-green-100 rounded">CONTACT US</a></li>
-      <li>
-          
-          <a href="tel:+9312371118" aria-label="Call WhatsApp" class="mb-20 flex items-center justify-center rounded-full border border-green-600 p-2 hover:bg-green-600 hover:text-white transition">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-12 h-12" viewBox="0 0 48 48">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#fff" d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z"></path><path fill="#fff" d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z"></path><path fill="#cfd8dc" d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z"></path><path fill="#40c351" d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z"></path><path fill="#fff" fill-rule="evenodd" d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z" clip-rule="evenodd"></path>
-            </svg>
-          </a>
-        </li>
     </ul>
   </nav>
 
-<script>
-  // Toggle mobile menu display based on checkbox
-  const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.querySelector('nav ul');
+  <script>
+    // Hamburger menu toggle for mobile
+    const menuToggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const desktopMenu = document.getElementById('desktop-menu');
 
-  menuToggle.addEventListener('change', function() {
-    if(this.checked) {
-      mobileMenu.style.display = 'flex';
-    } else {
-      mobileMenu.style.display = 'none';
-    }
-  });
-</script>
+    menuToggleBtn.addEventListener('click', function() {
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+      }
+    });
 
+    // Optional: Hide mobile menu on window resize if desktop
+    window.addEventListener('resize', function() {
+      if (window.innerWidth >= 768) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  </script>
 </header>
 
 
@@ -405,17 +389,17 @@
                         </div>
 
 
-                <!-- Center Section: Location Info -->
+                 <!-- Center Section: Location Info -->
                 <div class="w-full md:w-1/3 md:mb-0">
                     <div class="location-container bg-indigo-800 bg-opacity-40 rounded-lg p-4 ">
-                        <div class="flex">
+                        <div class="flex py-4 gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-300" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
-                            </svg>
-                        </div>011-32578115
-                        <h3 class="text-lg font-semibold">Our Location</h3>
-                        <p class="text-indigo-200">B1, 24 Bharat Vihar, Kakrola, Delhi, 110078 (Dwarka)</p>
-                        <p class="text-indigo-200">+91 9312371118</p>
+                            </svg> 
+                            <span class="text-lg font-semibold">Our Location</span>
+                        </div>
+                        <p class="text-indigo-200">E9 Bharat Vihar Kakrola New Delhi - 110078 Near Dwarka Sec-14 Metro Station</p>
+                        <p class="text-indigo-200">+91 9312371118, +91 9250222549</p>
 
                     </div>
                 </div>
@@ -423,17 +407,16 @@
                 <!-- Right Section: Google Location Link -->
                 <div class="w-full md:w-1/3 text-center md:text-right">
                     <a >
+                     
                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14020.976602519315!2d77.2058218!3d28.5323803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7789e075718915a3!2sS+Daryani+%26+Associates!5e0!3m2!1sen!2sin!4v1556689725694!5m2!1sen!2sin" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 px-3 py-5 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-lg" 
+                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.8003057893275!2d77.026487!3d28.605767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d054cb9dd9d75%3A0x94e5670f111a3c90!2sE9%2C%20Bharat%20Vihar%2C%20Kakrola%2C%20New%20Delhi%2C%20Delhi%2C%20110078!5e0!3m2!1sen!2sin!4v1755951837882!5m2!1sen!2sin"target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 px-3 py-5 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-lg" 
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade"
-                            title="Map showing location of S Daryani & Associates Chartered Accountants.">
+                            title="Map showing location of Dr. YK Gupta .">
                        </iframe>
-                        
                     </a>
-                    
                 </div>
             </div>
 
